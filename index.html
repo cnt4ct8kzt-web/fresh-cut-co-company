@@ -2,33 +2,67 @@
 <html>
 <head>
   <title>Fresh Cut Co Landscaping</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Georgia, serif;
       margin: 0;
-      background: #f4f4f4;
-      color: #222;
+      background: #f4f1e8;
+      color: #1b3a1b;
     }
 
-    header {
-      background: #1b5e20;
-      color: white;
-      padding: 50px 20px;
+    .hero {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .badge {
+      border: 6px solid #1b3a1b;
+      border-radius: 50%;
+      width: 320px;
+      height: 320px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      background: #f4f1e8;
+      padding: 20px;
+      box-sizing: border-box;
     }
 
-    h1 {
-      margin: 0;
+    .top {
+      font-size: 28px;
+      letter-spacing: 4px;
+      font-weight: bold;
+    }
+
+    .mid {
       font-size: 42px;
+      font-weight: 900;
+      line-height: 1;
     }
 
-    .tagline {
+    .mid span {
       font-size: 18px;
-      margin-top: 10px;
-      opacity: 0.9;
+      vertical-align: top;
+      margin-left: 5px;
     }
 
-    .container {
+    .icon {
+      font-size: 26px;
+      margin: 10px 0;
+    }
+
+    .bottom {
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    .section {
       max-width: 900px;
       margin: auto;
       padding: 20px;
@@ -44,28 +78,28 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
     }
 
     .btn {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 18px;
-      background: #1b5e20;
+      background: #1b3a1b;
       color: white;
       text-decoration: none;
       border-radius: 8px;
     }
 
     .btn:hover {
-      background: #144016;
+      opacity: 0.85;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 14px;
+      font-size: 12px;
       opacity: 0.7;
     }
   </style>
@@ -73,16 +107,22 @@
 
 <body>
 
-  <header>
-    <h1>Fresh Cut Co</h1>
-    <div class="tagline">Clean yards. Clean cuts. Clean vibe 🔥</div>
+  <!-- LOGO -->
+  <header class="hero">
+    <div class="badge">
+      <div class="top">FRESH</div>
+      <div class="mid">CUT <span>CO.</span></div>
+      <div class="icon">🚜</div>
+      <div class="bottom">COMPLETE LANDSCAPE SERVICES</div>
+    </div>
   </header>
 
-  <div class="container">
+  <!-- CONTENT -->
+  <div class="section">
 
     <div class="card">
       <h2>About Us</h2>
-      <p>We provide fast, clean, and affordable landscaping services. From basic mowing to full yard cleanups, we got you covered.</p>
+      <p>We provide clean, reliable, and affordable landscaping services. From mowing to full yard cleanups, we make your yard look fresh 🔥</p>
     </div>
 
     <div class="card">
@@ -91,20 +131,15 @@
         <div class="card">🌱 Lawn Mowing</div>
         <div class="card">✂️ Edging & Trimming</div>
         <div class="card">🍂 Yard Cleanups</div>
-        <div class="card">🌿 Basic Landscaping</div>
+        <div class="card">🌿 Landscaping</div>
       </div>
     </div>
 
     <div class="card">
       <h2>Contact</h2>
-      <p>Tap below to reach us for a free quote</p>
+      <p>Hit us up for a free quote</p>
       <a class="btn" href="tel:0000000000">Call Now</a>
       <a class="btn" href="mailto:freshcutco@gmail.com">Email</a>
-    </div>
-
-    <div class="card">
-      <h2>Gallery</h2>
-      <p>Drop your yard photos later and we’ll plug them in here 📸</p>
     </div>
 
   </div>
