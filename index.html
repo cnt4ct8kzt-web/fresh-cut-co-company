@@ -35,6 +35,7 @@ nav a{
   text-decoration:none;
   margin:0 10px;
   font-size:13px;
+  opacity:0.85;
 }
 
 /* HERO */
@@ -48,8 +49,8 @@ nav a{
   color:white;
 
   background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("https://images.unsplash.com/photo-1598908314732-07113901949c");
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
   background-size:cover;
   background-position:center;
 }
@@ -60,6 +61,7 @@ nav a{
 }
 
 .hero p{
+  margin:10px 0;
   opacity:0.9;
 }
 
@@ -97,21 +99,29 @@ section{
 
 h2{
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:25px;
 }
 
-/* CARDS */
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:15px;
 }
 
+/* CARDS */
 .card{
   background:white;
   border-radius:14px;
   padding:18px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  box-shadow:0 10px 25px rgba(0,0,0,0.06);
+  border:1px solid #e3ece3;
+}
+
+/* IMAGE */
+.card img{
+  width:100%;
+  border-radius:12px;
 }
 
 /* PRICING */
@@ -122,12 +132,31 @@ h2{
   border-bottom:1px solid #eee;
 }
 
-/* FOOTER */
-footer{
+/* CONTACT */
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin:6px 0;
+  border-radius:10px;
+  border:1px solid #cfdccd;
+}
+
+button{
+  width:100%;
+  padding:10px;
   background:#0f1a0f;
   color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
   text-align:center;
-  padding:30px;
+  padding:25px;
+  background:#0f1a0f;
+  color:white;
   font-size:13px;
 }
 
@@ -141,7 +170,7 @@ footer{
 <body>
 
 <nav>
-  <div>Fresh Cut Co.</div>
+  <div><b>Fresh Cut Co.</b></div>
   <div>
     <a href="#services">Services</a>
     <a href="#pricing">Pricing</a>
@@ -172,17 +201,16 @@ footer{
     <div class="card">
       ✔ Mowing & Trimming<br>
       ✔ Edging & Cleanup<br>
-      ✔ Weed Control<br>
-      ✔ Pest Treatment<br>
+      ✔ Weed Control<br
       ✔ Mulch Installation<br>
-      ✔ Irrigation Checks<br>
-      ✔ Gutter Cleaning<br>
       ✔ Full Yard Care
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1" width="100%" style="border-radius:10px;">
-      <p style="margin-top:10px;">Clean, sharp, professional yard finishes every visit.</p>
+      <img src="https://images.unsplash.com/photo-1595502219703-4c1e3f8c1f47" alt="yard">
+      <p style="margin-top:10px;">
+        Clean, sharp, professionally maintained lawns that stand out every visit.
+      </p>
     </div>
   </div>
 </section>
@@ -209,9 +237,7 @@ footer{
       <input placeholder="Name"/>
       <input placeholder="Phone"/>
       <textarea placeholder="What do you need done?"></textarea>
-      <button style="width:100%;padding:10px;background:#0f1a0f;color:white;border:none;border-radius:10px;">
-        Send Request
-      </button>
+      <button>Send Request</button>
     </div>
 
     <div class="card">
@@ -225,9 +251,9 @@ footer{
 </section>
 
 <footer>
-  Established 2025 • Website Updated 2026<br>
+  Fresh Cut Co • Established 2025 • Website Updated 2026<br>
   Serving Rupert • Paul • Heyburn • Burley<br>
-  <span class="small">Fresh Cut Co. — clean cuts, clean results.</span>
+  <span class="small">Clean cuts. Clean results. Real results.</span>
 </footer>
 
 </body>
