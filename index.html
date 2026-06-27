@@ -5,148 +5,180 @@
 
   <style>
     body {
-      font-family: Georgia, serif;
       margin: 0;
+      font-family: Georgia, serif;
       background: #f4f1e8;
       color: #1b3a1b;
     }
 
-    .hero {
-      display: flex;
-      justify-content: center;
-      padding: 60px 20px;
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
     }
 
-    .badge {
+    .logo {
       border: 6px solid #1b3a1b;
       border-radius: 50%;
       width: 320px;
       height: 320px;
-      text-align: center;
+      margin: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      position: relative;
       background: #f4f1e8;
       padding: 20px;
-      box-sizing: border-box;
     }
 
-    .top {
-      font-size: 28px;
-      letter-spacing: 4px;
-      font-weight: bold;
-    }
-
-    .mid {
-      font-size: 42px;
-      font-weight: 900;
-      line-height: 1;
-    }
-
-    .mid span {
-      font-size: 18px;
-      vertical-align: top;
-      margin-left: 5px;
-    }
-
-    .icon {
-      font-size: 26px;
-      margin: 10px 0;
-    }
-
-    .bottom {
-      font-size: 10px;
-      letter-spacing: 2px;
-      margin-top: 10px;
-      opacity: 0.8;
-    }
+    .top { font-size: 28px; font-weight: bold; letter-spacing: 3px; }
+    .mid { font-size: 42px; font-weight: 900; }
+    .sub { font-size: 10px; letter-spacing: 2px; opacity: 0.8; margin-top: 10px; }
 
     .section {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
       padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 15px;
     }
 
     .card {
       background: white;
       padding: 20px;
-      margin: 15px 0;
       border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
+    h2 {
+      border-bottom: 2px solid #1b3a1b;
+      padding-bottom: 5px;
     }
 
     .btn {
       display: inline-block;
       margin-top: 10px;
-      padding: 10px 18px;
+      padding: 10px 15px;
       background: #1b3a1b;
       color: white;
       text-decoration: none;
       border-radius: 8px;
     }
 
-    .btn:hover {
-      opacity: 0.85;
+    .btn:hover { opacity: 0.85; }
+
+    ul {
+      padding-left: 18px;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       font-size: 12px;
       opacity: 0.7;
     }
+
+    .highlight {
+      background: #1b3a1b;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <!-- LOGO -->
-  <header class="hero">
-    <div class="badge">
-      <div class="top">FRESH</div>
-      <div class="mid">CUT <span>CO.</span></div>
-      <div class="icon">🚜</div>
-      <div class="bottom">COMPLETE LANDSCAPE SERVICES</div>
-    </div>
-  </header>
+<header>
+  <div class="logo">
+    <div class="top">FRESH CUT CO</div>
+    <div class="mid">LANDSCAPING</div>
+    <div class="sub">COMPLETE LAWN & YARD SERVICES</div>
+  </div>
+</header>
 
-  <!-- CONTENT -->
-  <div class="section">
+<div class="section">
 
-    <div class="card">
-      <h2>About Us</h2>
-      <p>We provide clean, reliable, and affordable landscaping services. From mowing to full yard cleanups, we make your yard look fresh 🔥</p>
-    </div>
+  <div class="card">
+    <h2>Service Area</h2>
+    <p>Rupert • Paul • Heyburn • Burley</p>
+  </div>
 
-    <div class="card">
-      <h2>Services</h2>
-      <div class="grid">
-        <div class="card">🌱 Lawn Mowing</div>
-        <div class="card">✂️ Edging & Trimming</div>
-        <div class="card">🍂 Yard Cleanups</div>
-        <div class="card">🌿 Landscaping</div>
-      </div>
-    </div>
+  <div class="grid">
 
     <div class="card">
-      <h2>Contact</h2>
-      <p>Hit us up for a free quote</p>
-      <a class="btn" href="tel:0000000000">Call Now</a>
-      <a class="btn" href="mailto:freshcutco@gmail.com">Email</a>
+      <h2>Our Services</h2>
+      <ul>
+        <li>Expert Mowing</li>
+        <li>Edging & Trimming</li>
+        <li>Fertilizer & Weed Control</li>
+        <li>Pest Management</li>
+        <li>Yard Cleanups (Seasonal)</li>
+        <li>Mulch Installation</li>
+        <li>Irrigation Checks</li>
+        <li>Gutter Cleaning</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Pricing Guide</h2>
+      <ul>
+        <li>Small Yards: $40–50</li>
+        <li>Medium Yards: $55–70</li>
+        <li>Large Yards: $75+</li>
+        <li>Cleanups: $75+</li>
+        <li>Gutter Cleaning: $125+</li>
+      </ul>
+      <p><b>Minimum charge: $35</b></p>
     </div>
 
   </div>
 
-  <footer>
-    © 2026 Fresh Cut Co Landscaping
-  </footer>
+  <div class="highlight">
+    NOW ACCEPTING NEW CLIENTS • FREE ESTIMATES • CALL OR MESSAGE TODAY
+  </div>
+
+  <div class="card">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Locally Owned & Operated</li>
+      <li>Fair & Honest Pricing</li>
+      <li>Reliable Scheduling</li>
+      <li>Attention to Detail</li>
+      <li>Satisfaction Guaranteed</li>
+      <li>Free Estimates</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p><b>Owner:</b> Abraham Arizpe</p>
+    <p><b>Phone:</b> (208) 431-8406 / (208) 647-1538</p>
+    <a class="btn" href="tel:2084318406">Call Now</a>
+  </div>
+
+  <div class="card">
+    <h2>Social Media</h2>
+    <p>Instagram: @rodrigo_Jaquez</p>
+    <p>Facebook: Fresh Cut Co</p>
+    <p>TikTok: @FreshCutCo_AR</p>
+  </div>
+
+  <div class="card">
+    <h2>Hashtags</h2>
+    <p>#FreshCutCo #LawnCare #YardCleanup #GutterCleaning #RupertIdaho #LocalBusiness</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Fresh Cut Co Landscaping
+</footer>
 
 </body>
 </html>
