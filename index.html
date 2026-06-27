@@ -13,55 +13,57 @@ html{scroll-behavior:smooth;}
 body{
   margin:0;
   font-family:Montserrat;
-  background:#eef3ee;
   color:#1e2b1e;
 }
 
 /* NAV */
 nav{
-  position:sticky;
+  position:fixed;
+  width:100%;
   top:0;
-  background:#163516;
+  z-index:1000;
+  background:rgba(10,25,10,0.75);
+  backdrop-filter:blur(10px);
   display:flex;
   justify-content:space-between;
-  align-items:center;
   padding:12px 20px;
-}
-
-nav h1{
   color:white;
-  font-size:16px;
-  letter-spacing:1px;
 }
 
 nav a{
   color:white;
-  margin:0 10px;
   text-decoration:none;
+  margin:0 10px;
   font-size:13px;
-  opacity:0.85;
 }
 
 /* HERO */
 .hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
-  padding:80px 20px;
-  background:linear-gradient(135deg,#1b3a1b,#2d5a2d);
   color:white;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1598908314732-07113901949c");
+  background-size:cover;
+  background-position:center;
 }
 
-.hero h2{
-  font-size:44px;
+.hero h1{
+  font-size:54px;
   margin:0;
 }
 
 .hero p{
-  margin:10px 0;
   opacity:0.9;
 }
 
 .badge{
-  display:inline-block;
   margin-top:10px;
   padding:6px 12px;
   border:1px solid rgba(255,255,255,0.4);
@@ -73,12 +75,12 @@ nav a{
 .btn{
   display:inline-block;
   margin:6px;
-  padding:10px 14px;
+  padding:11px 15px;
   background:white;
-  color:#163516;
-  text-decoration:none;
+  color:#0f1a0f;
   border-radius:10px;
   font-weight:600;
+  text-decoration:none;
   transition:0.2s;
 }
 
@@ -88,30 +90,28 @@ nav a{
 
 /* SECTIONS */
 section{
-  max-width:1000px;
+  padding:70px 20px;
+  max-width:1100px;
   margin:auto;
-  padding:60px 20px;
 }
 
 h2{
   text-align:center;
-  margin-bottom:25px;
+  margin-bottom:20px;
 }
 
-/* GRID */
+/* CARDS */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:15px;
 }
 
-/* CARDS */
 .card{
   background:white;
   border-radius:14px;
   padding:18px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.06);
-  border:1px solid #e3ece3;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 /* PRICING */
@@ -122,41 +122,26 @@ h2{
   border-bottom:1px solid #eee;
 }
 
-/* CONTACT */
-input,textarea{
-  width:100%;
-  padding:10px;
-  margin:6px 0;
-  border-radius:10px;
-  border:1px solid #cfdccd;
-}
-
-button{
-  width:100%;
-  padding:10px;
-  background:#163516;
-  color:white;
-  border:none;
-  border-radius:10px;
-  cursor:pointer;
-}
-
 /* FOOTER */
 footer{
-  text-align:center;
-  padding:25px;
-  background:#163516;
+  background:#0f1a0f;
   color:white;
+  text-align:center;
+  padding:30px;
   font-size:13px;
 }
-.small{opacity:0.8;font-size:12px;}
+
+.small{
+  opacity:0.8;
+  font-size:12px;
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-  <h1>Fresh Cut Co.</h1>
+  <div>Fresh Cut Co.</div>
   <div>
     <a href="#services">Services</a>
     <a href="#pricing">Pricing</a>
@@ -166,7 +151,7 @@ footer{
 
 <!-- HERO -->
 <div class="hero">
-  <h2>Fresh Cut Co.</h2>
+  <h1>Fresh Cut Co.</h1>
   <p>Professional Lawn Care & Landscaping Services</p>
 
   <span class="badge">Established 2025 • Website Updated 2026</span>
@@ -175,7 +160,7 @@ footer{
 
   <a class="btn" href="tel:2084318406">📞 Abraham</a>
   <a class="btn" href="tel:2086471538">📞 Rodrigo</a>
-  <a class="btn" href="https://instagram.com/Freshutco_Ar" target="_blank">📷 Instagram</a>
+  <a class="btn" href="https://www.instagram.com/freshcutco_ar?igsh=MXNjaXI5Mmd6bnczbQ==" target="_blank">📷 Instagram</a>
   <a class="btn" href="https://www.facebook.com/share/17zt3ypGES/?mibextid=wwXIfr" target="_blank">📘 Facebook</a>
 </div>
 
@@ -192,12 +177,12 @@ footer{
       ✔ Mulch Installation<br>
       ✔ Irrigation Checks<br>
       ✔ Gutter Cleaning<br>
-      ✔ Full Yard Maintenance
+      ✔ Full Yard Care
     </div>
 
     <div class="card">
-      <h3>Clean, Reliable Work</h3>
-      <p>We show up on time, do clean cuts, and keep your yard looking sharp every visit.</p>
+      <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1" width="100%" style="border-radius:10px;">
+      <p style="margin-top:10px;">Clean, sharp, professional yard finishes every visit.</p>
     </div>
   </div>
 </section>
@@ -220,29 +205,29 @@ footer{
   <h2>Contact</h2>
 
   <div class="grid">
-
     <div class="card">
       <input placeholder="Name"/>
       <input placeholder="Phone"/>
       <textarea placeholder="What do you need done?"></textarea>
-      <button>Send Request</button>
+      <button style="width:100%;padding:10px;background:#0f1a0f;color:white;border:none;border-radius:10px;">
+        Send Request
+      </button>
     </div>
 
     <div class="card">
       <p><b>Owners:</b> Abraham Arizpe & Rodrigo Jaquez</p>
       <p><b>Abraham:</b> (208) 431-8406</p>
       <p><b>Rodrigo:</b> (208) 647-1538</p>
-      <p><b>Instagram:</b> @Freshutco_Ar</p>
+      <p><b>Instagram:</b> @freshcutco_ar</p>
       <p><b>Facebook:</b> Fresh Cut Co.</p>
     </div>
-
   </div>
 </section>
 
 <footer>
-  Fresh Cut Co • Established 2025 • Website Updated 2026<br>
+  Established 2025 • Website Updated 2026<br>
   Serving Rupert • Paul • Heyburn • Burley<br>
-  <span class="small">Modern landscaping solutions with professional care</span>
+  <span class="small">Fresh Cut Co. — clean cuts, clean results.</span>
 </footer>
 
 </body>
