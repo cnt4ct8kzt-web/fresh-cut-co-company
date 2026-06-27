@@ -6,144 +6,151 @@
 <title>Fresh Cut Co.</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth;}
 
 body{
   margin:0;
   font-family:Montserrat;
-  background:#f5f1e6;
-  color:#1f2d1f;
+  background:#eef3ee;
+  color:#1e2b1e;
 }
 
 /* NAV */
 nav{
   position:sticky;
   top:0;
-  background:#1f3b1f;
+  background:#1b3a1b;
   display:flex;
   justify-content:space-between;
+  padding:12px 20px;
   align-items:center;
-  padding:10px 20px;
-  z-index:1000;
 }
 
 nav h1{
-  color:#f5f1e6;
-  font-family:Cinzel;
-  font-size:18px;
+  color:white;
+  font-size:16px;
+  letter-spacing:1px;
 }
 
 nav a{
-  color:#f5f1e6;
+  color:white;
   margin:0 10px;
   text-decoration:none;
-  font-size:14px;
-}
-
-nav a:hover{
-  opacity:0.7;
+  font-size:13px;
+  opacity:0.9;
 }
 
 /* HERO */
 .hero{
   text-align:center;
-  padding:80px 20px;
-  border-bottom:3px solid #1f3b1f;
+  padding:70px 20px;
 }
 
 .hero h2{
-  font-family:Cinzel;
-  font-size:40px;
+  font-size:42px;
   margin:0;
+  letter-spacing:1px;
 }
 
 .hero p{
+  margin:10px 0;
+  opacity:0.8;
+}
+
+.badge{
+  display:inline-block;
   margin-top:10px;
+  padding:6px 12px;
+  border:1px solid #1b3a1b;
+  font-size:12px;
+  border-radius:20px;
 }
 
 /* BUTTONS */
 .btn{
   display:inline-block;
-  background:#1f3b1f;
-  color:#f5f1e6;
-  padding:10px 15px;
-  margin:5px;
+  margin:6px;
+  padding:10px 14px;
+  background:#1b3a1b;
+  color:white;
   text-decoration:none;
-  border-radius:6px;
+  border-radius:8px;
+  font-size:13px;
+  transition:0.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  opacity:0.9;
 }
 
 /* SECTIONS */
 section{
-  padding:60px 20px;
   max-width:1000px;
   margin:auto;
+  padding:50px 20px;
 }
 
 h2{
-  font-family:Cinzel;
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:25px;
 }
 
-/* GRID */
+/* CARDS */
 .grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
 }
 
 .card{
-  background:#fffdf7;
-  border:2px solid #1f3b1f;
+  background:white;
+  border-radius:12px;
   padding:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+  border:1px solid #d7e3d7;
 }
 
-/* pricing */
+/* PRICING */
 .price{
   display:flex;
   justify-content:space-between;
-  border-bottom:1px solid #ccc;
   padding:8px 0;
+  border-bottom:1px solid #eee;
 }
 
 /* CONTACT */
-form{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-
-input, textarea{
+input,textarea{
+  width:100%;
   padding:10px;
-  border:1px solid #1f3b1f;
-  background:#fffdf7;
+  margin:6px 0;
+  border-radius:8px;
+  border:1px solid #cfdccd;
 }
 
 button{
-  background:#1f3b1f;
-  color:#f5f1e6;
-  padding:10px;
-  border:none;
-  cursor:pointer;
-}
-
-/* MAP */
-iframe{
   width:100%;
-  height:250px;
-  border:0;
+  padding:10px;
+  background:#1b3a1b;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
 }
 
 /* FOOTER */
 footer{
   text-align:center;
-  padding:30px;
-  background:#1f3b1f;
-  color:#f5f1e6;
+  padding:25px;
+  background:#1b3a1b;
+  color:white;
+  font-size:13px;
+}
+.small{
+  font-size:12px;
+  opacity:0.8;
 }
 </style>
 </head>
@@ -155,7 +162,6 @@ footer{
   <div>
     <a href="#services">Services</a>
     <a href="#pricing">Pricing</a>
-    <a href="#about">Why Us</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -163,36 +169,37 @@ footer{
 <!-- HERO -->
 <div class="hero">
   <h2>Fresh Cut Co.</h2>
-  <p>Professional Lawn Care & Landscaping Services</p>
+  <p>Modern Lawn Care & Landscaping Services</p>
 
-  <a class="btn" href="tel:2084318406">📞 Call Now</a>
-  <a class="btn" href="https://instagram.com/rodrigo_Jaquez" target="_blank">📷 Instagram</a>
-  <a class="btn" href="https://facebook.com/FreshCutCo" target="_blank">📘 Facebook</a>
+  <span class="badge">Established 2025 • Updated 2026</span>
+
+  <br><br>
+
+  <a class="btn" href="tel:2084318406">📞 Abraham</a>
+  <a class="btn" href="tel:2086471538">📞 Rodrigo</a>
+  <a class="btn" href="https://instagram.com/Freshutco_Ar" target="_blank">📷 Instagram</a>
+  <a class="btn" href="https://facebook.com/freshcutco" target="_blank">📘 Facebook</a>
 </div>
 
 <!-- SERVICES -->
 <section id="services">
   <h2>Services</h2>
+
   <div class="grid">
     <div class="card">
-      ✔ Expert Mowing<br>
-      ✔ Edging & Trimming<br>
+      ✔ Mowing & Trimming<br>
+      ✔ Edging<br>
       ✔ Weed Control<br>
       ✔ Pest Management<br>
-      ✔ Yard Cleanups<br>
-      ✔ Mulch Installation<br>
+      ✔ Cleanups<br>
+      ✔ Mulch Work<br>
       ✔ Irrigation Checks<br>
       ✔ Gutter Cleaning
     </div>
+
     <div class="card">
-      <svg viewBox="0 0 64 64" width="120" fill="#1f3b1f">
-        <rect x="10" y="40" width="40" height="6"/>
-        <path d="M18 30l10-10h12l6 10v10H18z"/>
-        <circle cx="20" cy="52" r="5"/>
-        <circle cx="44" cy="52" r="5"/>
-        <path d="M32 20v-8h6"/>
-      </svg>
-      <p>Reliable, clean, and detailed lawn care every visit.</p>
+      <h3>Reliable & Clean Work</h3>
+      <p>We show up, get it done right, and keep your yard looking sharp every time.</p>
     </div>
   </div>
 </section>
@@ -202,28 +209,11 @@ footer{
   <h2>Pricing</h2>
 
   <div class="card">
-    <div class="price"><span>Small yards</span><span>$40–50</span></div>
-    <div class="price"><span>Medium yards</span><span>$55–70</span></div>
-    <div class="price"><span>Large yards</span><span>$75+</span></div>
+    <div class="price"><span>Small Yard</span><span>$40–50</span></div>
+    <div class="price"><span>Medium Yard</span><span>$55–70</span></div>
+    <div class="price"><span>Large Yard</span><span>$75+</span></div>
     <div class="price"><span>Cleanups</span><span>$75+</span></div>
-    <div class="price"><span>Gutter cleaning</span><span>$125+</span></div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <h2>Why Choose Us</h2>
-  <div class="grid">
-    <div class="card">
-      ✔ Locally Owned<br>
-      ✔ Fair Pricing<br>
-      ✔ Free Estimates
-    </div>
-    <div class="card">
-      ✔ Reliable Scheduling<br>
-      ✔ Detail Focused<br>
-      ✔ Satisfaction Guaranteed
-    </div>
+    <div class="price"><span>Gutters</span><span>$125+</span></div>
   </div>
 </section>
 
@@ -232,34 +222,29 @@ footer{
   <h2>Contact</h2>
 
   <div class="grid">
+
     <div class="card">
-      <form>
-        <input placeholder="Name"/>
-        <input placeholder="Phone"/>
-        <textarea placeholder="What do you need?"></textarea>
-        <button type="submit">Send Request</button>
-      </form>
+      <input placeholder="Name"/>
+      <input placeholder="Phone"/>
+      <textarea placeholder="What do you need done?"></textarea>
+      <button>Send Request</button>
     </div>
 
     <div class="card">
-      <p><b>Call:</b> 208-431-8406</p>
-      <p><b>Alt:</b> 208-647-1538</p>
-      <p><b>Owner:</b> Abraham Arizpe</p>
+      <p><b>Owners:</b> Abraham Arizpe & Rodrigo Jaquez</p>
+      <p><b>Abraham:</b> (208) 431-8406</p>
+      <p><b>Rodrigo:</b> (208) 647-1538</p>
+      <p><b>Instagram:</b> @Freshutco_Ar</p>
+      <p><b>Facebook:</b> Fresh Cut Co.</p>
     </div>
+
   </div>
-
-  <br>
-
-  <!-- MAP (replace with real location later) -->
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18..."
-    loading="lazy">
-  </iframe>
 </section>
 
 <footer>
-  Serving Rupert • Paul • Heyburn • Burley <br>
-  #FreshCutCo #LawnCare #LocalBusiness
+  Fresh Cut Co. • Established 2025 • Website Updated 2026<br>
+  Serving Your Local Area<br>
+  <span class="small">Modern landscaping solutions with clean, reliable service</span>
 </footer>
 
 </body>
