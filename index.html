@@ -2,168 +2,176 @@
 <html>
 <head>
   <title>Fresh Cut Co Landscaping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       margin: 0;
-      font-family: Georgia, serif;
-      background: #f4f1e8;
-      color: #1b3a1b;
+      font-family: Arial, sans-serif;
+      background: #f6f7f2;
+      color: #1a2e1a;
     }
 
-    header {
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1599687267812-35e1c5d8a9b0?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
       text-align: center;
-      padding: 60px 20px 30px;
+      padding: 120px 20px;
     }
 
-    .logo {
-      border: 6px solid #1b3a1b;
-      border-radius: 50%;
-      width: 320px;
-      height: 320px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: #f4f1e8;
-      padding: 20px;
-      box-sizing: border-box;
+    .hero h1 {
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 2px;
     }
 
-    .top { font-size: 28px; font-weight: bold; letter-spacing: 3px; }
-    .mid { font-size: 42px; font-weight: 900; }
-    .sub { font-size: 10px; letter-spacing: 2px; opacity: 0.8; margin-top: 10px; }
-
-    .section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 15px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      border-bottom: 2px solid #1b3a1b;
-      padding-bottom: 5px;
-    }
-
-    h3 {
-      margin-bottom: 5px;
-    }
-
-    ul {
-      padding-left: 18px;
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.9;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #1b3a1b;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #2e7d32;
       color: white;
       text-decoration: none;
       border-radius: 8px;
+      font-weight: bold;
     }
 
     .btn:hover {
       opacity: 0.85;
     }
 
-    .highlight {
-      background: #1b3a1b;
-      color: white;
-      padding: 15px;
-      border-radius: 10px;
+    /* SECTIONS */
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      border-left: 5px solid #2e7d32;
+      padding-left: 10px;
+    }
+
+    /* STATS */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       text-align: center;
-      margin-top: 20px;
+      margin-top: 30px;
+    }
+
+    .stat {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial {
+      font-style: italic;
     }
 
     footer {
       text-align: center;
       padding: 30px;
       font-size: 12px;
-      opacity: 0.7;
+      opacity: 0.6;
     }
+
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">
-    <div class="top">FRESH CUT CO</div>
-    <div class="mid">LANDSCAPING</div>
-    <div class="sub">COMPLETE LAWN & YARD SERVICES</div>
-  </div>
-</header>
+<!-- HERO -->
+<div class="hero">
+  <h1>Fresh Cut Co</h1>
+  <p>Premium Lawn Care & Landscaping Services</p>
+  <a class="btn" href="tel:2084318406">Get Free Estimate</a>
+</div>
 
-<div class="section">
-
+<!-- ABOUT -->
+<div class="container">
   <div class="card">
-    <h2>Service Area</h2>
-    <p>Rupert • Paul • Heyburn • Burley</p>
+    <h2>About Us</h2>
+    <p>
+      Locally owned landscaping company providing reliable, clean, and affordable yard services.
+      We make your property look sharp, maintained, and professional year-round.
+    </p>
   </div>
 
-  <div class="grid">
+  <!-- STATS -->
+  <div class="stats">
+    <div>✔ Fast Service</div>
+    <div>✔ Affordable Pricing</div>
+    <div>✔ Free Estimates</div>
+    <div>✔ Local & Trusted</div>
+  </div>
 
+  <!-- SERVICES -->
+  <div class="grid" style="margin-top:30px;">
     <div class="card">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Expert Mowing</li>
-        <li>Edging & Trimming</li>
-        <li>Fertilizer & Weed Control</li>
-        <li>Pest Management</li>
-        <li>Yard Cleanups</li>
-        <li>Mulch Installation</li>
-        <li>Irrigation Checks</li>
-        <li>Gutter Cleaning</li>
-      </ul>
+      <h2>Services</h2>
+      <p>• Mowing<br>• Trimming<br>• Cleanups<br>• Weed Control<br>• Gutter Cleaning<br>• Mulch Installation</p>
     </div>
 
     <div class="card">
-      <h2>Pricing Guide</h2>
-      <ul>
-        <li>Small Yards: $40–50</li>
-        <li>Medium Yards: $55–70</li>
-        <li>Large Yards: $75+</li>
-        <li>Cleanups: $75+</li>
-        <li>Gutter Cleaning: $125+</li>
-      </ul>
-      <p><b>Minimum charge: $35</b></p>
+      <h2>Pricing</h2>
+      <p>
+        Small Yards: $40–50<br>
+        Medium: $55–70<br>
+        Large: $75+<br>
+        Cleanups: $75+<br>
+        Gutter: $125+
+      </p>
     </div>
-
   </div>
 
-  <div class="highlight">
-    NOW ACCEPTING NEW CLIENTS • FREE ESTIMATES • CALL OR MESSAGE TODAY
+  <!-- WHY US -->
+  <div class="card" style="margin-top:20px;">
+    <h2>Why Choose Us</h2>
+    <p>
+      ✔ Locally Owned & Operated<br>
+      ✔ Reliable Scheduling<br>
+      ✔ Fair Pricing<br>
+      ✔ Attention to Detail<br>
+      ✔ Free Estimates
+    </p>
   </div>
 
+  <!-- TESTIMONIALS -->
   <div class="card">
-    <h2>Why Choose Us?</h2>
-    <ul>
-      <li>Locally Owned & Operated</li>
-      <li>Fair & Honest Pricing</li>
-      <li>Reliable Scheduling</li>
-      <li>Attention to Detail</li>
-      <li>Satisfaction Guaranteed</li>
-      <li>Free Estimates</li>
-    </ul>
+    <h2>Customer Reviews</h2>
+    <p class="testimonial">“My yard has never looked this clean. Super fast service.”</p>
+    <p class="testimonial">“Affordable and professional every time.”</p>
+    <p class="testimonial">“Best landscaping service in the area.”</p>
   </div>
 
+  <!-- CONTACT -->
   <div class="card">
     <h2>Contact</h2>
-    <p><b>Owners:</b> Abraham Arizpe & Rodrigo Jaquez</p>
     <p><b>Rodrigo:</b> (208) 647-1538</p>
     <p><b>Abraham:</b> (208) 431-8406</p>
 
@@ -171,21 +179,21 @@
     <a class="btn" href="tel:2084318406">Call Abraham</a>
   </div>
 
+  <!-- SERVICE AREA -->
   <div class="card">
-    <h2>Social Media</h2>
-    <p>Instagram: @Freshutco_Ar</p>
-    <p>Facebook: Fresh Cut Co.</p>
-  </div>
-
-  <div class="card">
-    <h2>Hashtags</h2>
-    <p>#FreshCutCo #LawnCare #YardCleanup #GutterCleaning #RupertIdaho #LocalBusiness</p>
+    <h2>Service Area</h2>
+    <p>Rupert • Paul • Heyburn • Burley</p>
   </div>
 
 </div>
 
 <footer>
   © 2026 Fresh Cut Co Landscaping
+</footer>
+
+</body>
+</html>
+  © 2025 Fresh Cut Co Landscaping
 </footer>
 
 </body>
