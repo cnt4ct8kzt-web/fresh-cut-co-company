@@ -21,11 +21,11 @@ body{
 nav{
   position:sticky;
   top:0;
-  background:#1b3a1b;
+  background:#163516;
   display:flex;
   justify-content:space-between;
-  padding:12px 20px;
   align-items:center;
+  padding:12px 20px;
 }
 
 nav h1{
@@ -39,33 +39,34 @@ nav a{
   margin:0 10px;
   text-decoration:none;
   font-size:13px;
-  opacity:0.9;
+  opacity:0.85;
 }
 
 /* HERO */
 .hero{
   text-align:center;
-  padding:70px 20px;
+  padding:80px 20px;
+  background:linear-gradient(135deg,#1b3a1b,#2d5a2d);
+  color:white;
 }
 
 .hero h2{
-  font-size:42px;
+  font-size:44px;
   margin:0;
-  letter-spacing:1px;
 }
 
 .hero p{
   margin:10px 0;
-  opacity:0.8;
+  opacity:0.9;
 }
 
 .badge{
   display:inline-block;
   margin-top:10px;
   padding:6px 12px;
-  border:1px solid #1b3a1b;
-  font-size:12px;
+  border:1px solid rgba(255,255,255,0.4);
   border-radius:20px;
+  font-size:12px;
 }
 
 /* BUTTONS */
@@ -73,24 +74,23 @@ nav a{
   display:inline-block;
   margin:6px;
   padding:10px 14px;
-  background:#1b3a1b;
-  color:white;
+  background:white;
+  color:#163516;
   text-decoration:none;
-  border-radius:8px;
-  font-size:13px;
+  border-radius:10px;
+  font-weight:600;
   transition:0.2s;
 }
 
 .btn:hover{
   transform:translateY(-2px);
-  opacity:0.9;
 }
 
 /* SECTIONS */
 section{
   max-width:1000px;
   margin:auto;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
 h2{
@@ -98,19 +98,20 @@ h2{
   margin-bottom:25px;
 }
 
-/* CARDS */
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:15px;
 }
 
+/* CARDS */
 .card{
   background:white;
-  border-radius:12px;
-  padding:15px;
-  box-shadow:0 10px 20px rgba(0,0,0,0.05);
-  border:1px solid #d7e3d7;
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.06);
+  border:1px solid #e3ece3;
 }
 
 /* PRICING */
@@ -126,17 +127,17 @@ input,textarea{
   width:100%;
   padding:10px;
   margin:6px 0;
-  border-radius:8px;
+  border-radius:10px;
   border:1px solid #cfdccd;
 }
 
 button{
   width:100%;
   padding:10px;
-  background:#1b3a1b;
+  background:#163516;
   color:white;
   border:none;
-  border-radius:8px;
+  border-radius:10px;
   cursor:pointer;
 }
 
@@ -144,14 +145,11 @@ button{
 footer{
   text-align:center;
   padding:25px;
-  background:#1b3a1b;
+  background:#163516;
   color:white;
   font-size:13px;
 }
-.small{
-  font-size:12px;
-  opacity:0.8;
-}
+.small{opacity:0.8;font-size:12px;}
 </style>
 </head>
 
@@ -169,16 +167,16 @@ footer{
 <!-- HERO -->
 <div class="hero">
   <h2>Fresh Cut Co.</h2>
-  <p>Modern Lawn Care & Landscaping Services</p>
+  <p>Professional Lawn Care & Landscaping Services</p>
 
-  <span class="badge">Established 2025 • Updated 2026</span>
+  <span class="badge">Established 2025 • Website Updated 2026</span>
 
   <br><br>
 
   <a class="btn" href="tel:2084318406">📞 Abraham</a>
   <a class="btn" href="tel:2086471538">📞 Rodrigo</a>
   <a class="btn" href="https://instagram.com/Freshutco_Ar" target="_blank">📷 Instagram</a>
-  <a class="btn" href="https://facebook.com/freshcutco" target="_blank">📘 Facebook</a>
+  <a class="btn" href="https://www.facebook.com/share/17zt3ypGES/?mibextid=wwXIfr" target="_blank">📘 Facebook</a>
 </div>
 
 <!-- SERVICES -->
@@ -188,18 +186,18 @@ footer{
   <div class="grid">
     <div class="card">
       ✔ Mowing & Trimming<br>
-      ✔ Edging<br>
+      ✔ Edging & Cleanup<br>
       ✔ Weed Control<br>
-      ✔ Pest Management<br>
-      ✔ Cleanups<br>
-      ✔ Mulch Work<br>
+      ✔ Pest Treatment<br>
+      ✔ Mulch Installation<br>
       ✔ Irrigation Checks<br>
-      ✔ Gutter Cleaning
+      ✔ Gutter Cleaning<br>
+      ✔ Full Yard Maintenance
     </div>
 
     <div class="card">
-      <h3>Reliable & Clean Work</h3>
-      <p>We show up, get it done right, and keep your yard looking sharp every time.</p>
+      <h3>Clean, Reliable Work</h3>
+      <p>We show up on time, do clean cuts, and keep your yard looking sharp every visit.</p>
     </div>
   </div>
 </section>
@@ -242,9 +240,9 @@ footer{
 </section>
 
 <footer>
-  Fresh Cut Co. • Established 2025 • Website Updated 2026<br>
-  Serving Your Local Area<br>
-  <span class="small">Modern landscaping solutions with clean, reliable service</span>
+  Fresh Cut Co • Established 2025 • Website Updated 2026<br>
+  Serving Rupert • Paul • Heyburn • Burley<br>
+  <span class="small">Modern landscaping solutions with professional care</span>
 </footer>
 
 </body>
